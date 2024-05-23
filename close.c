@@ -1,10 +1,11 @@
 #include <fcntl.h>
 #include <stdio.h>
+#include<stdlib.h>
 #include <unistd.h>
  
 int main()
 {
-    int fd1 = open("sample.txt", O_RDONLY);
+    int fd1 = open("dup.txt", O_RDONLY);
     if (fd1 < 0) {
         perror("c1");
         exit(1);
