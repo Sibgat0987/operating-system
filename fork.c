@@ -12,8 +12,7 @@ int main(){
 }
 
 void forkExample() {
-
-    /*here we dont know whether operating system will give 1st priority to child or parent*/
+ /*here we dont know whether operating system will give 1st priority to child or parent*/
     __pid_t p = fork();
     if (p < 0){
         perror("fork fail");
